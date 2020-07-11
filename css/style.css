@@ -1,0 +1,136 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.container {
+    border: 1px solid red;
+    height: 100%;
+    padding: 0 150px 0 150px;
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    border: 1px solid red;
+    display: flex;
+}
+
+.flex .content-section {
+    border: 1px solid blue;
+    width: 50%;
+    padding: 20px;
+    padding-left: 40px;
+    align-self: center;
+}
+
+.flex .content-section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.flex .content-section p {
+    font-size: 0.9rem;
+}
+
+.flex .form-section {
+    border: 1px solid orange;
+    width: 50%;
+    padding: 20px;
+}
+
+.flex .form-section .form-title {
+    background: var(--blue);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 90%);
+}
+
+.flex .form-section .form-title span {
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.flex .form-section .sign-up-form {
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.flex .form-section .sign-up-form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+}
+
+.flex .form-section .sign-up-form button {
+    background: var(--green);
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+}
+
+.flex .form-section .sign-up-form small {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--grayish-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.flex .form-section .sign-up-form small a {
+    text-decoration: none;
+    color: var(--red);
+}
+
+.flex .form-section .sign-up-form small a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
