@@ -14,67 +14,74 @@
 
 body {
     height: 100vh;
+    background-image: url(../images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--red);
     font-family: 'Poppins', sans-serif;
     position: relative;
 }
 
 .container {
-    border: 1px solid red;
     height: 100%;
-    padding: 0 150px 0 150px;
+    padding: 0 100px 0 100px;
     display: flex;
     align-items: center;
+    justify-content: center;;
 }
 
 .flex {
-    border: 1px solid red;
+    width: 1070px;
     display: flex;
 }
 
 .flex .content-section {
-    border: 1px solid blue;
-    width: 50%;
-    padding: 20px;
-    padding-left: 40px;
+    margin-right: 40px;
+    color: #ffffff;
     align-self: center;
 }
 
 .flex .content-section h2 {
-    margin-bottom: 10px;
-    font-size: 2rem;
+    margin-bottom: 25px;
+    font-size: 3.05rem;
     font-weight: 700;
+    line-height: 1.1;
 }
 
 .flex .content-section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .flex .form-section {
-    border: 1px solid orange;
-    width: 50%;
-    padding: 20px;
+    width: 1200px;
+    margin-left: 30px;
 }
 
 .flex .form-section .form-title {
     background: var(--blue);
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 5px;;
+    border: none;
+    border-radius: 10px;;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
     text-align: center;
     font-size: 0.8rem;
     font-weight: 400;
-    color: hsl(0, 0%, 90%);
+    letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
 .flex .form-section .form-title span {
     font-weight: 600;
-    color: white;
-    letter-spacing: 0.5px;
+    line-height: 2;
+    color: #ffffff;
 }
 
 .flex .form-section .sign-up-form {
-    border: 1px solid blue;
-    padding: 30px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .flex .form-section .sign-up-form input {
@@ -82,9 +89,17 @@ body {
     width: 100%;
     padding: 15px;
     padding-left: 25px;
-    margin-bottom: 10px;
-    border: 1px solid var(--grayish-blue);
+    margin-bottom: 18px;
+    border: 1px solid #dadce0;
     border-radius: 5px;
+    line-height: 1.8;
+    font-family: inherit;
+    font-weight: 700;
+    outline: 0;
+}
+
+.flex .form-section .sign-up-form input:focus {
+    border: 1.4px solid var(--blue);
 }
 
 .flex .form-section .sign-up-form button {
@@ -94,15 +109,18 @@ body {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 2px 0 1.5px hsl(154, 59%, 45%),
+                0 -1px 0 0 hsl(154, 59%, 45%);
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 500;
+    letter-spacing: 1px;
     color: white;
 }
 
 .flex .form-section .sign-up-form small {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.63rem;
     color: var(--grayish-blue);
     display: flex;
     justify-content: center;
@@ -110,7 +128,8 @@ body {
 
 .flex .form-section .sign-up-form small a {
     text-decoration: none;
-    color: var(--red);
+    color: hsla(0, 100%, 45%, 0.712);
+    font-weight: 700;
 }
 
 .flex .form-section .sign-up-form small a:hover {
@@ -128,6 +147,7 @@ footer {
 
 footer .attribution { 
     font-size: 11px; 
+    font-weight: 600;
     text-align: center; 
 }
 
