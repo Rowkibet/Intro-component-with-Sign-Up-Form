@@ -67,13 +67,13 @@ body {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 400;
-    letter-spacing: 0.5px;
     color: #ffffff;
+    line-height: 2;
 }
 
 .flex .form-section .form-title span {
     font-weight: 600;
-    line-height: 2;
+    letter-spacing: 0.5px;
     color: #ffffff;
 }
 
@@ -87,8 +87,7 @@ body {
 .flex .form-section .sign-up-form input {
     display: block;
     width: 100%;
-    padding: 15px;
-    padding-left: 25px;
+    padding: 15px 15px 15px 25px;
     margin-bottom: 18px;
     border: 1px solid #dadce0;
     border-radius: 5px;
@@ -122,14 +121,15 @@ body {
     display: block;
     font-size: 0.63rem;
     color: var(--grayish-blue);
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .flex .form-section .sign-up-form small a {
     text-decoration: none;
+    font-size: 0.63rem;
     color: hsla(0, 100%, 45%, 0.712);
     font-weight: 700;
+    opacity: 0.8;
 }
 
 .flex .form-section .sign-up-form small a:hover {
@@ -153,4 +153,55 @@ footer .attribution {
 
 footer .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 375px;
+        background-image: url(../images/bg-intro-mobile.png);
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex {
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .flex .content-section {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .flex .content-section h2 {
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .flex .content-section p {
+        text-align: center;
+    }
+
+    .flex .form-section {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .flex .form-section .form-title {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 15px 40px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .flex .form-section .sign-up-form input {
+        padding: 15px;
+    }
 }
