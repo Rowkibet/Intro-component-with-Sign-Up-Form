@@ -24,7 +24,6 @@ body {
 
 .container {
     height: 100%;
-    padding: 0 100px 0 100px;
     display: flex;
     align-items: center;
     justify-content: center;;
@@ -84,11 +83,16 @@ body {
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 
-.flex .form-section .sign-up-form input {
+.flex .form-section .sign-up-form .form-control {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.flex .form-section .sign-up-form .form-control input {
     display: block;
     width: 100%;
     padding: 15px 15px 15px 25px;
-    margin-bottom: 18px;
+    margin-bottom: 6px;
     border: 1px solid #dadce0;
     border-radius: 5px;
     line-height: 1.8;
@@ -97,8 +101,38 @@ body {
     outline: 0;
 }
 
-.flex .form-section .sign-up-form input:focus {
+.flex .form-section .sign-up-form .form-control input:focus {
     border: 1.4px solid var(--blue);
+    caret-color: var(--blue);
+}
+
+.flex .form-section .sign-up-form .form-control .icon {
+    position: absolute;
+    top: 16.9px;
+    right: 25px;
+    visibility: hidden;
+}
+
+.flex .form-section .sign-up-form .form-control > small {
+    text-align: right;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--red);
+
+    display: none;
+}
+
+.flex .form-section .sign-up-form .form-control.error input {
+    border: 2px solid var(--red);
+}
+
+.flex .form-section .sign-up-form .form-control.error .icon {
+    visibility: visible;
+}
+
+.flex .form-section .sign-up-form .form-control.error small {
+    display: block;
 }
 
 .flex .form-section .sign-up-form button {
@@ -108,13 +142,21 @@ body {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 0 1.5px hsl(154, 59%, 45%),
-                0 -1px 0 0 hsl(154, 59%, 45%);
+    box-shadow: 0 2px 0 1px hsl(154, 59%, 45%),
+                0 -1px 1px 0 hsl(154, 59%, 45%);
     text-transform: uppercase;
     font-family: inherit;
     font-weight: 500;
     letter-spacing: 1px;
     color: white;
+    cursor: pointer;
+    outline: 0;
+}
+
+.flex .form-section .sign-up-form button:hover {
+    background: hsl(153, 46%, 72%);
+    box-shadow: 0 2px 0 1px hsl(153, 32%, 64%),
+                0 -1px 1px 0 hsl(153, 32%, 64%);
 }
 
 .flex .form-section .sign-up-form small {
@@ -127,9 +169,8 @@ body {
 .flex .form-section .sign-up-form small a {
     text-decoration: none;
     font-size: 0.63rem;
-    color: hsla(0, 100%, 45%, 0.712);
+    color: var(--red);
     font-weight: 700;
-    opacity: 0.8;
 }
 
 .flex .form-section .sign-up-form small a:hover {
@@ -201,7 +242,15 @@ footer .attribution a {
         font-weight: 400;
     }
 
+    .flex .form-section .sign-up-form {
+        padding: 20px;
+    }
+
     .flex .form-section .sign-up-form input {
         padding: 15px;
+    }
+
+    .flex .form-section .sign-up-form small {
+        width: 90%;
     }
 }

@@ -26,13 +26,32 @@
         <div class="form-title">
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </div>
-        <form class="sign-up-form">
-          <input type="text" name="fname" id="fname" placeholder="First Name">
-          <input type="text" name="lname" id="lname" placeholder="Last Name">
-          <input type="email" name="email" id="email" placeholder="Email Address">
-          <input type="password" name="password" id="password" placeholder="Password">
-        
-          <button class="submit">Claim your free trial</button>
+        <form class="sign-up-form" novalidate>
+          <div class="form-control">
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <img src="images/icon-error.svg" alt="" class="icon">
+            <small>Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+            <img src="images/icon-error.svg" alt="" class="icon">
+            <small>Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" alt="" class="icon">
+            <small>Message</small>
+          </div>
+
+          <div class="form-control">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <img src="images/icon-error.svg" alt="" class="icon">
+            <small>Message</small>
+          </div>
+
+          <button type="submit" name="submit" class="submit">Claim your free trial</button>
           <small>By clicking the button, you are agreeing to our&nbsp;<a href="#">Terms and Services</a></small>
         </form>
       </div>
@@ -45,5 +64,7 @@
       Coded by <a href="#">Rowland Kibet</a>.
     </p>
   </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
